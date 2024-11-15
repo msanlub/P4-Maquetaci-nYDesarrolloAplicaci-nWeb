@@ -1,14 +1,18 @@
 import { Outlet } from "react-router-dom";
-//import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const layoutPublic = () => {
   return (
     <div>
-        <h1>LayoutPublic</h1>
-        {/* <Navbar /> */}
-          {/* <main>Main</main> */}
-        <Outlet />
-        <footer>Footer</footer>
+        <>
+      <Header />
+      <main>
+        {/* componente de react router que marca donde se renderiza los hijos de la ruta */}
+        <Outlet /> 
+      </main>
+      <Footer />
+    </>
     </div>
   )
 }
