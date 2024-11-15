@@ -1,6 +1,6 @@
 # Proyecto de Aplicación Web: ComicVerse
 
-![](./img/marvelComic2.jpg)
+![](./img/panoramica.jpeg)
 
 
 1. [Idea de la aplicación](#idea-de-la-aplicación)
