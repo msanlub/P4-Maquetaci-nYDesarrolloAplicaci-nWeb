@@ -7,6 +7,7 @@ import LayoutPublic from "../layouts/LayoutPublic";
 import Evento from "../pages/Evento";
 import Personaje from "../pages/Personaje";
 import Usuario from "../pages/Usuario";
+import Contacto from "../pages/Contacto";
 import NotFound from "../pages/NotFound";
 
 export const router = createBrowserRouter ([
@@ -43,6 +44,10 @@ export const router = createBrowserRouter ([
             {
                 path:"/evento",
                 element: <Evento />,
+            },
+            {
+                path:"/contacto",
+                element: <Contacto />,
             },
 
         ]
