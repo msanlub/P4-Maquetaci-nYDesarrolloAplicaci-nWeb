@@ -7,7 +7,7 @@ import LayoutPublic from "../layouts/LayoutPublic";
 import Evento from "../pages/Evento";
 import Personaje from "../pages/Personaje";
 import Usuario from "../pages/Usuario";
-import Contacto from "../pages/Contacto";
+import Contacto from "../pages/contacto/Contacto";
 import NotFound from "../pages/NotFound";
 
 export const router = createBrowserRouter ([
