@@ -1,4 +1,4 @@
-
+import '../styles/Comic.css'
 
 const Comic = () => {
   return (
