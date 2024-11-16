@@ -1,4 +1,5 @@
 import Evento from './Evento'
+import "../../styles/ListaEventos.css"
 
 const ListaEventos = ({eventos}) => {
     console.log('eventos recibidos: ', eventos);

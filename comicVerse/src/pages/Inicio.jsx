@@ -1,3 +1,4 @@
+import ListaEventos from "../components/eventos/ListaEventos";
 import ListaComics from "../components/ListaComics"
 
 
@@ -16,6 +17,17 @@ const Inicio = () => {
     { id: 9, nombre: "Cómic 9", volumen: "9", año: "2023" },
   ];
 
+  const eventosData = [
+    {id:1, titulo: "evento 1"},
+    {id:2, titulo: "evento 2"},
+    {id:3, titulo: "evento 3"},
+    {id:4, titulo: "evento 4"},
+    {id:5, titulo: "evento 5"},
+    {id:6, titulo: "evento 6"},
+    {id:7, titulo: "evento 7"},
+    {id:8, titulo: "evento 8"},
+  ]
+
   return (
     <div>
       <div>Inicio</div>
@@ -24,7 +36,8 @@ const Inicio = () => {
       <div>
         <h1>Cómics</h1>
         <ListaComics comics={comicsData} />
-        
+        <h1>Eventos</h1>
+        <ListaEventos eventos={eventosData} />
       </div>
     </div>
   );
