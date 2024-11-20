@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/logoHeader.png';
 import '../styles/Header.css'; 
 
@@ -8,16 +9,16 @@ const Header = () => {
                 <img src={logo} alt="Logo" />
             </section>
             <nav className="navbar">
-                <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#usuario">USUARIO</a></li>
-                    <li><a href="#eventos">EVENTOS</a></li>
-                    <li><a href="#artista">ARTISTA</a></li>
-                </ul>
-                <section className="buscador-container">
-                    <input type="text" placeholder="Buscar..." />
-                </section>
-            </nav>
+                    <ul>
+                        <li><Link to='/' >INICIO</Link></li>
+                        <li><Link to='/usuario' >USUARIO</Link></li>
+                        <li><Link to='/evento' >LOGIN</Link></li>
+                        <li><Link to='/artista' >ARTISTA</Link></li>
+                    </ul>
+                </nav>
+            <section className="buscador-container">
+                <input type="text" placeholder="Buscar..." />
+            </section>     
         </section>
     );
 };

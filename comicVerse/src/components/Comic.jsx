@@ -1,21 +1,18 @@
-import '../styles/Comic.css'
-import { IoIosArrowDroprightCircle } from "react-icons/io";
-import imagen from '../assets/comic3.jpg'; 
+import '../styles/Comic.css';
 
-const Comic = ({ id, nombre, volumen, año }) => {
+const Comic = ({ id, imagen, titulo, isbn }) => {
+  //console.log( titulo, isbn , imagen)
   return (
     <section className={`contenedor-comic-${id}`}>
-        <section className='imagenComic'>
-            <img src={imagen} alt={`Portada de ${nombre}`} />
-        </section>
-        <section className='infoComic'>
-            <h1>{nombre}</h1>
-            <h3>#{volumen}</h3>
-            <h3>{año}</h3>
-            <IoIosArrowDroprightCircle />
-        </section>
+      <section className='imagenComic'>
+        <img src={imagen} alt={`Portada de ${titulo}`} />
+      </section>
+      <section className='infoComic'>
+        <h1>{titulo}</h1>
+        <h3>ISBN: {isbn}</h3>    
+      </section>
     </section>
-  )
-}
+  );
+};
 
 export default Comic;
